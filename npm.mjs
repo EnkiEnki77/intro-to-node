@@ -15,4 +15,15 @@
 // the --save flag saves your dependencies into the package.json file, so that when someone pulls your project from github all they
 // need to do is npm i to get the node modules folder for those dependencies. 
 
-// package-lock.json locks dependencies into the same version, so there's no conflict. s
+// package-lock.json locks dependencies into the same version, so there's no conflict. 
+
+// To install a package globally do -g at the end of your command. 
+
+// To use functionality out of a package without actually installing it use npx 
+
+// To see node errors in the console use the network tab
+
+// To make a script that serves a view npm i install serve
+
+// CLI stands for command line interface, its a fancy term for an app that runs in the terminal. Such as npm or node. It is 
+// desined to start and complete one off tasks. 
