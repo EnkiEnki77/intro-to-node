@@ -6,7 +6,7 @@
 // so it must be destructured on import 
 import { action2 } from './server.mjs'
 // node comes with a version of fs that comes wrapped in promises instead of callbacks.
-import {readFile} from 'fs/promises'
+import {readFile, writeFile} from 'fs/promises'
 
 // If you dont use the sync version of a fs method it will be asynchronous. Methods are async by default, because you typically 
 // dont want things in node to be synchronous.
@@ -22,4 +22,16 @@ const data = {
     title: 'Get a code job',
     body: 'Learning node to get a job'
 }
+
+Object.entries(data).forEach(([k, v]) => template = template.replace(`{${k}}`, v))
+
+console.log(template)
+
+// Once youve altered the content of the HTML file you inject it back into the disk by using the writeFile method.
+
+await writeFile(new URL('index.html', import.meta.url), template)
+await writeFile(new URL('test.html', import.meta.url), template)
+await writeFile(new URL('test', import.meta.url), 'test.html')
+
+
 
