@@ -5,6 +5,7 @@
 
 import http from 'http';
 
+
 //points to the ip address of your local machine
 const host = 'localhost';
 
@@ -39,6 +40,10 @@ const server = http.createServer((req, res) => {
 }, )
 
 //sets up the port used for the server. 
-server.listen(port, host, () => {
-    console.log(`Server listening on ${host}:${port}`)
-})
+// server.listen(port, host, () => {
+//     console.log(`Server listening on ${host}:${port}`)
+// })
+
+//Learn and use Postman for testin API's   
+
+

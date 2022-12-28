@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "bin": {
     "reddit-posts": "./bin/index.js"
-  }
-  ,
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/EnkiEnki77/intro-to-node.git"
@@ -19,5 +18,13 @@
   "bugs": {
     "url": "https://github.com/EnkiEnki77/intro-to-node/issues"
   },
-  "homepage": "https://github.com/EnkiEnki77/intro-to-node#readme"
+  "homepage": "https://github.com/EnkiEnki77/intro-to-node#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
 }
